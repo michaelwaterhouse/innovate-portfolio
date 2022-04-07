@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block content %}
+
+<h2>{% block title %} Oh Blimey!{%endblock%}</h2>
+
+<img src="{{url_for('static', filename='images/frank_test.jpg')}}" alt="Frank Sidebottom Test Card" class="frank_test">
+
+<h2>Bobbins, Page Not Found</h2>
+
+
+{%endblock%}

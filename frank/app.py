@@ -22,6 +22,10 @@ app.register_blueprint(views, url_prefix = "/")
 def home():
     return render_template("index.html")
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 #########################################
 
 app.route("/home")
