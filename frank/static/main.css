@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
-h1 {
+.topnav {
     font-family: 'Titillium Web', sans-serif; 
     color: #2c1b15;
     background-color: #de890d;
@@ -9,10 +9,10 @@ h1 {
     margin-top: 10px;
     margin-bottom: 1px;
     text-align: center;
-    padding-top: 60px;
-    padding-right: 30px;
+    padding-top: 16px;
+    padding-right: 10px;
     padding-bottom: 10px;
-    padding-left: 80px;
+    padding-left: 10px;
         }
 
 h2 {
@@ -25,7 +25,44 @@ body {
     background-color: ;
         }
 
+.button {
+          font-size: 16px;
+          font-weight: 200;
+          letter-spacing: 1px;
+          padding: 13px 20px 13px;
+          outline: 0;
+          border: 1px solid black;
+          cursor: pointer;
+          position: relative;
+          background-color: pink;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+        }
         
+.button:after {
+          content: "";
+          background-color: #ffe54c;
+          width: 100%;
+          z-index: -1;
+          position: absolute;
+          height: 100%;
+          top: 7px;
+          left: 7px;
+          transition: 0.2s;
+        }
+        
+        .button:hover:after {
+          top: 0px;
+          left: 0px;
+        }
+        
+        @media (min-width: 768px) {
+          .button {
+            padding: 13px 50px 13px;
+          }
+        }
+
 img.frank_test {
     display: block;
     margin-left: auto;

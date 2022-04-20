@@ -26,6 +26,10 @@ def home():
 def contact():
     return render_template("contact.html")
 
+@app.route("/story")
+def story():
+    return render_template("story.html")
+
 #########################################
 
 app.route("/home")

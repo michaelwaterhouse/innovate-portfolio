@@ -8,18 +8,20 @@
     <title>{% block title%}{% endblock %}- Frankophilia</title>
 </head>
 <body>
+    <div class="topnav">
     <h1>Frankophilia</h1>
 
     <nav>
       <a href="{{url_for('home')}}">
-          <button>Home</button>
+          <button class="button">Home</button>
       </a>
       <a href="{{url_for('contact')}}">
-          <button>Contact</button>
+          <button class="button">Contact</button>
       </a>
-    </nav>
-
-    <div>
+      <a href="{{url_for('story')}}">
+          <button class="button">Story</button>
+      </a>
+     </nav>
+</div>
     {% block content %}
     {% endblock %} 
-</div>
