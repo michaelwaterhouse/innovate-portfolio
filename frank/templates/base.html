@@ -8,20 +8,42 @@
     <title>{% block title%}{% endblock %}- Frankophilia</title>
 </head>
 <body>
-    <div class="topnav">
-    <h1>Frankophilia</h1>
+<header>
+    <div class="container">
+    
+
+    <img src="frank_head.jpg" alt="logo" class="logo">
+
 
     <nav>
-      <a href="{{url_for('home')}}">
+
+    <ul>
+
+    <li><a href="{{url_for('home')}}">
           <button class="button">Home</button>
       </a>
+    </li>
+
+    <li>
       <a href="{{url_for('contact')}}">
           <button class="button">Contact</button>
       </a>
+    </li>
+
+    <li>
       <a href="{{url_for('story')}}">
           <button class="button">Story</button>
       </a>
+    </li>
+
+    </ul>
      </nav>
+
 </div>
+</header>
     {% block content %}
     {% endblock %} 
+
+    <div class="footer">
+        <p>Footer</p>
+      </div>

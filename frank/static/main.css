@@ -1,29 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
-.topnav {
-    font-family: 'Titillium Web', sans-serif; 
-    color: #2c1b15;
-    background-color: #de890d;
-    font-size: 68px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 1px;
-    text-align: center;
-    padding-top: 16px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-        }
-
-h2 {
-    font-family: 'Titillium Web', sans-serif; 
-    color: #2c1b15;
-    text-align: center
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: ;
-        }
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #9e807f ;
+}
+
+/* Style the top navigation bar */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #1370AF;
+}
+
+header::after{
+content:'';
+display: table;
+clear: both;
+}
+.logo {
+  float:left;
+}
+
+nav {
+  float: right;
+}
+
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+
+/* .topnav {
+    font-family: 'Titillium Web', sans-serif; 
+    color: #2c1b15;
+    background-color: #de890d;
+    font-size: 58px;
+    font-weight: bold;
+  
+    text-align: center;
+    padding: 25px 50px 75px 100px;
+    } */
+       
+
+h1 {font-family: 'Titillium Web', sans-serif; 
+  color: #FCF30A;
+  text-align: center
+}
+    
+h2 {
+    font-family: 'Titillium Web', sans-serif; 
+    color: #FCF30A;
+    text-align: center
+}
 
 .button {
           font-size: 16px;
@@ -61,7 +101,6 @@ body {
           .button {
             padding: 13px 50px 13px;
           }
-        }
 
 img.frank_test {
     display: block;
@@ -69,11 +108,15 @@ img.frank_test {
     margin-right: auto;
     width: 50%;
 
-p {
+P {
     font-family: 'Titillium Web', sans-serif; 
     color: #2c1b15;
     background-color: #d7ad8c;
         }
+
+        #1370AF, #FCF30A, #CA8B77, #DBB69A, #423629, #1C1915
+
+
 
   /* CSV */
 /*3c312a,986952,e2dfd8,ba8d06,d7ad8c,de890d,2c1b15,202429,949796,9e807f
