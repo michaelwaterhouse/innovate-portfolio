@@ -26,13 +26,17 @@ def home():
 def contact():
     return render_template("contact.html")
 
-@app.route("/story")
-def story():
-    return render_template("story.html")
+@app.route("/origins")
+def early():
+    return render_template("early.html")
+
+@app.route("/legacy")
+def legacy():
+    return render_template("legacy.html")
 
 #########################################
 
-app.route("/home")
+@app.route("/home")
 def home_redirect():
     return redirect (url_for("home"))
 

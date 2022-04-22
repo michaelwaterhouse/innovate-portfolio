@@ -11,9 +11,13 @@
 <header>
     <div class="container">
     
+    <img src="{{url_for('static', filename='images/frank_head.jpg')}}" alt="logo" class="logo">
 
-    <img src="frank_head.jpg" alt="logo" class="logo">
-
+<div class="title">
+<h1>
+Frankophilia
+</h1>
+</div>
 
     <nav>
 
@@ -25,25 +29,33 @@
     </li>
 
     <li>
+      <a href="{{url_for('early')}}">
+          <button class="button">Origins</button>
+      </a>
+    </li>
+    
+   
+
+    <li>
+      <a href="{{url_for('legacy')}}">
+          <button class="button">Legacy</button>
+      </a>
+    </li>
+
+    <li>
       <a href="{{url_for('contact')}}">
           <button class="button">Contact</button>
       </a>
     </li>
 
-    <li>
-      <a href="{{url_for('story')}}">
-          <button class="button">Story</button>
-      </a>
-    </li>
+   
 
     </ul>
-     </nav>
+    </nav>
 
 </div>
 </header>
     {% block content %}
     {% endblock %} 
 
-    <div class="footer">
-        <p>Footer</p>
-      </div>
+  
