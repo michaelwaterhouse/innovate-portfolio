@@ -9,8 +9,9 @@ from flask import Flask, Blueprint, render_template, url_for, redirect
 views = Blueprint(__name__, "views")
 
 # the website is defined as a flask app and the url prefix is set to ""
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 app.register_blueprint(views, url_prefix = "/")
+
 
 #########################################
 #* APPLICATION PAGES
@@ -26,13 +27,17 @@ def home():
 def contact():
     return render_template("contact.html")
 
-@app.route("/origins")
+@app.route("/about")
 def early():
     return render_template("early.html")
 
-@app.route("/legacy")
+@app.route("/statue")
 def legacy():
     return render_template("legacy.html")
+
+@app.route("/documentary")
+def documentary():
+    return render_template("documentary.html")
 
 #########################################
 

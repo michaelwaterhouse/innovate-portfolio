@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #9e807f ;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: pink;
+
 }
 
 .container {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+flex-wrap: wrap; 
 }
 
 header {
   background-color: #1370AF;
   position: relative;
+
+  height: 200px;
 }
 
 header::after{
@@ -30,8 +33,9 @@ clear: both;
 .logo {
   float:left;
   object-fit: contain;
-  width: 90px;
-  height: 90px;
+  width: 180px;
+  height: 180px;
+  padding-top: 20px;
 }
 
 
@@ -42,6 +46,7 @@ nav {
 }
 
 nav ul {
+  
   margin:0;
   padding: 0;
   list-style: none;
@@ -54,17 +59,24 @@ nav li {
 }
 
 
-.title {font-family: 'Titillium Web', sans-serif; 
+.title {
+  font-family: 'Titillium Web',; 
   color: #FCF30A;
-  text-align: center;
-  padding: 5px;
-  display:inline
+  font-size: 30px;
+  padding: 0px;
+  float: right;
+  top: 0;
+  left: 0;
 }
+
     
 h2 {
-    font-family: 'Titillium Web', sans-serif; 
-    color: #FCF30A;
-    text-align: center
+    font-family: 'Courier New'; 
+    color: #2c1b15;
+    text-align: center;
+    font-size: xx-large;
+
+  
 }
 
 .button {
@@ -74,10 +86,10 @@ h2 {
           letter-spacing: 1px;
           padding: 13px 20px 13px;
           outline: 0;
-          border: 1px solid black;
+          border: 1px solid white;
           cursor: pointer;
           position: relative;
-          background-color: white;
+          background-color: pink;
         
           user-select: none;
           -webkit-user-select: none;
@@ -112,54 +124,123 @@ img.frank_test {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
 
-P {
-    font-family: 'Titillium Web', sans-serif; 
-    color: #2c1b15;
-    background-color: #d7ad8c;
+.indexphoto {
+  float: right;    
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  padding:0px;
+}
+
+.frankwind {
+  float: right;    
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: 150px;
+  margin-left: 80px;
+  padding:0px;
+}
+
+.frankstatue {
+  float: right;    
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: 150px;
+  margin-left: 80px;
+  padding:0px;
+  width:50%;
+}
+
+.frankbeing {
+  float: right;    
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: 150px;
+  margin-left: 80px;
+  padding:0px;
+  width:50%;
+  height: 50%;
+}
+
+.doctrailer {
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 90px;
+  margin-left: 80px;
+  padding:30px;
+}
+
+.box {
+  border: 1px;
+  font-family: 'Courier New';
+  font-size: 30px;
+  padding-right: 200px;
+  padding-left: 100px;
+  color: #2c1b15;
+ }
+
+.video {
+  float: left;    
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: 150px;
+  margin-left: 80px;
+  padding:0px;
 
 
-/* contact form
+}
 
-/* Style inputs with type="text", select elements and textareas */
+
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid #DBB69A,; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
 }
 
-/* Style the submit button with a specific background color etc */
+
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #1370AF;
+  color: pink;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-style: 'Courier New';
+
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #a09b45;
+  background-color: #FCF30A;
 }
 
-/* Add a background color and some padding around the form */
+
 .form {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: ;
   padding: 20px;
 }
-        }
-
-        #1370AF, #FCF30A, #CA8B77, #DBB69A, #423629, #1C1915
 
 
+.site-footer
+{
+ text-align:center;
+  padding:45px, 20px;
+  font-size:15px;
+  bottom:0;
+  color:#737373;
+  position: fixed;
+  width: 100%; 
+  height: 50px;
+  background-color: #26272b;
+}
 
-  /* CSV */
-/*3c312a,986952,e2dfd8,ba8d06,d7ad8c,de890d,2c1b15,202429,949796,9e807f
 

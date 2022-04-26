@@ -8,6 +8,10 @@
     <title>{% block title%}{% endblock %}- Frankophilia</title>
 </head>
 <body>
+  <script src="{{url_for('static', filename = 'main.js')}}"></script>
+
+  
+
 <header>
     <div class="container">
     
@@ -30,7 +34,7 @@ Frankophilia
 
     <li>
       <a href="{{url_for('early')}}">
-          <button class="button">Origins</button>
+          <button class="button">About</button>
       </a>
     </li>
     
@@ -38,7 +42,13 @@ Frankophilia
 
     <li>
       <a href="{{url_for('legacy')}}">
-          <button class="button">Legacy</button>
+          <button class="button">Statue</button>
+      </a>
+    </li>
+
+    <li>
+      <a href="{{url_for('documentary')}}">
+          <button class="button">Documentary</button>
       </a>
     </li>
 
@@ -55,7 +65,27 @@ Frankophilia
 
 </div>
 </header>
+
+
     {% block content %}
     {% endblock %} 
 
+    <footer class="site-footer">
+     
+        
+       
+        
+          
+       
+            
+                <p>Copyright &copy; 2022 All Rights Reserved by Frankophila
+           
+                </p>
+            
+    
+        
+      </div>
+    </footer>
+
+    
   
