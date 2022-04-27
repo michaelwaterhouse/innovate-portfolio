@@ -8,26 +8,28 @@
     <title>{% block title%}{% endblock %}- Frankophilia</title>
 </head>
 <body>
-  <script src="{{url_for('static', filename = 'main.js')}}"></script>
-
   
-
 <header>
     <div class="container">
     
-    <img src="{{url_for('static', filename='images/frank_head.jpg')}}" alt="logo" class="logo">
+
 
 <div class="title">
 <h1>
 Frankophilia
 </h1>
-</div>
+</div> 
+
+<a href="{{url_for('home')}}">
+  <img src="{{url_for('static', filename='images/frank_head.jpg')}}" alt="logo" class="primary-icon">
+</a>
 
     <nav>
+  
+       <ul>
 
-    <ul>
-
-    <li><a href="{{url_for('home')}}">
+    <li>
+      <a href="{{url_for('home')}}">
           <button class="button">Home</button>
       </a>
     </li>
@@ -38,8 +40,6 @@ Frankophilia
       </a>
     </li>
     
-   
-
     <li>
       <a href="{{url_for('legacy')}}">
           <button class="button">Statue</button>
@@ -58,19 +58,24 @@ Frankophilia
       </a>
     </li>
 
+
    
 
     </ul>
     </nav>
 
 </div>
-</header>
+</header> 
 
 
     {% block content %}
     {% endblock %} 
 
-    <footer class="site-footer">
+
+</body>
+
+
+<footer class="site-footer">
      
         
        
@@ -88,4 +93,3 @@ Frankophilia
     </footer>
 
     
-  

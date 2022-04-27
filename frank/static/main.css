@@ -2,26 +2,25 @@
 
 
 body {
-  margin: 0;
+margin:0;
   font-family: 'Courier New', Courier, monospace;
   background-color: pink;
+  margin-bottom: 100px;
 
 }
 
 .container {
   width: 95%;
   margin: 0 auto;
-  display: flex;
-  display: flex;
   justify-content: space-between;
-flex-wrap: wrap; 
+
 }
 
 header {
   background-color: #1370AF;
   position: relative;
-
   height: 200px;
+
 }
 
 header::after{
@@ -30,12 +29,13 @@ display: table;
 clear: both;
 }
 
-.logo {
+.primary-icon {
   float:left;
   object-fit: contain;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height:150px;
   padding-top: 20px;
+  padding-left:100px;
 }
 
 
@@ -183,6 +183,17 @@ img.frank_test {
   color: #2c1b15;
  }
 
+.boxindex {
+  border: 1px;
+  font-family: 'Courier New';
+  font-size: 30px;
+  padding-right: 200px;
+  padding-left: 100px;
+  padding-top: 220px;
+  color: #2c1b15;
+
+}
+
 .video {
   float: left;    
   margin-top: 20px;
@@ -196,13 +207,13 @@ img.frank_test {
 
 
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #DBB69A,; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #DBB69A,; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
   resize: vertical;
 }
 
